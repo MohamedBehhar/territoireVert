@@ -1,0 +1,156 @@
+
+@import "./navbar";
+@import "./sidebar";
+@import "./about";
+@import "./home";
+@import "./social-icon";
+@import "./services";
+@import "./contact";
+@import "./variables";
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	// color: $White;
+}
+
+body{
+	background-color: white;
+	color: $dark-grey;
+}
+
+a{
+	font-family: $Frobot;
+	letter-spacing: 1px;
+	// color: $Lightest-Slate;
+	font-size: 1.1rem;
+}
+p {
+	font-family: $Font-poppins;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	line-height: 30px;
+	color: $paragraph-color;
+}
+
+@media (max-width: 768px) {
+	p{
+		font-size: 1rem;
+	}
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+@media (min-width: 1200px) {
+	.container{
+		width: 1200px;
+		padding:  0 2rem;
+		// background-color: aliceblue;
+	}
+}
+@media (max-width: 1200px) {
+	.container{
+		width: 100%;
+		padding:  0 3.5rem;
+	}
+}
+@media (max-width: 768px) {
+	.container{
+		padding:  0 2rem;
+	}
+}
+@media (max-width: 568px) {
+	.container{
+		padding:  0 1rem;
+	}
+}
+
+.section-title{
+	margin-bottom: $Small-margin;
+	display: flex;
+	align-items: center;
+	h1{
+		width: 100%;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 3rem;
+		margin-right: 1rem;
+		font-family: $Font-poppins;
+		font-size: 40px;
+		font-weight: 400;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-title{
+		h1{
+			font-size: 2rem;
+		}
+	}
+}
+
+// styling the footer 
+
+.footer{
+	.footer-text{
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		text-align: center;
+		background-color: whitesmoke;
+		padding: .8rem 0;
+		.heart{
+			margin: 0 7px;
+			fill: $Green;
+		}
+		p{
+			color: $paragraph-color;
+			font-size: .7rem;
+			line-height: 16px;
+			a{
+				font-size: .7rem;
+				color: rgb(0, 123, 205);
+			}
+		}
+	}
+	.footer-icons{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.footer-icon{
+			margin-right: .5rem;
+			fill: $Green;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer{
+		.footer-icons{
+			display: none;
+		}
+	}
+}
+
+// Scroll fade-in animation style 
+.reveal{
+	position: relative;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all ease-in-out 700ms;
+}
+
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+
+}

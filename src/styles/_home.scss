@@ -1,0 +1,45 @@
+.home-center{
+	background-image: url("home-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	h1{
+		color: whitesmoke;
+		width: 80%;
+		text-transform: uppercase;
+		border: 5px solid white;
+		padding: 3rem;
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.244);
+		font-family: $Frobot;
+	}
+}
+
+@media (max-width: 850px) {
+	.home-center{
+		h1{
+			width: 100%;
+			border: 5px solid white;
+			padding: 2rem;
+			font-size: 25px;
+			line-height: 30px;
+		}
+
+	}
+}
+@media (max-width: 650px) {
+	.home-center{
+		.img-container{
+			.home-picture{
+				max-width: 60%;
+			}
+		}
+	}
+}

@@ -55,3 +55,11 @@
 	}
 	
 }
+
+@media (max-width: 650px) {
+	.sidebar{
+		.close-icon{
+			right: 1.5rem;
+		}
+	}
+}

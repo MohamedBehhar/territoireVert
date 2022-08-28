@@ -1,14 +1,14 @@
 .about{
 	padding: 3rem 0;
-	// height: 50vh;
-	// display: flex;
-	align-items: center;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	.about-center {
 		padding-top: 0rem;
 		.about-section{
 			display: flex;
 			.description{
+				span{
+					font-weight: bold
+				}
 				padding: 1rem;
 				display: flex;
 				align-items: center;

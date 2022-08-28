@@ -3,7 +3,6 @@
 @import "./sidebar";
 @import "./about";
 @import "./home";
-@import "./social-icon";
 @import "./services";
 @import "./contact";
 @import "./variables";
@@ -102,16 +101,9 @@ p {
 
 .footer{
 	.footer-text{
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
 		text-align: center;
 		background-color: whitesmoke;
 		padding: .8rem 0;
-		.heart{
-			margin: 0 7px;
-			fill: $Green;
-		}
 		p{
 			color: $paragraph-color;
 			font-size: .7rem;
@@ -126,10 +118,6 @@ p {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		.footer-icon{
-			margin-right: .5rem;
-			fill: $Green;
-		}
 	}
 }
 

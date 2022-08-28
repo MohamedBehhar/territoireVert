@@ -13,7 +13,7 @@ export const AppProvider = ({children}) => {
 		{
 			var windowHeight = window.innerHeight;
 			var revealTop = reveals[i].getBoundingClientRect().top;
-			var revealPoint = 100;
+			var revealPoint = 10;
 
 			if (revealTop < windowHeight - revealPoint)
 				reveals[i].classList.add('active');

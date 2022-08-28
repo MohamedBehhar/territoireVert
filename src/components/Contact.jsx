@@ -8,7 +8,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
 
-      emailjs.sendForm('service_kdpiou9', 'template_uplvcof', form.current, 'HUgVHHUAN5bWJ2zej')
+      emailjs.sendForm('service_5xiocum', 'template_lhpzudv', form.current, 'HUgVHHUAN5bWJ2zej')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -35,15 +35,15 @@ const Contact = () => {
         Votre email a ete bien envoyer
       </p>
           <h2>Contactez-nous</h2>
-          <select>
-            <option value="0">Selectioner votre service</option>
-            <option value="1">Service 1</option>
-            <option value="2">Service 2</option>
-            <option value="3">Service 3</option>
-            <option value="4">Service 4</option>
-          </select>
           <input type="text" id='name' name='name' placeholder='Nom'  required/>
-          <input type="text" id='subject' name='subject' placeholder='Sujet'  required/>
+          {/* <input type="text" id='subject' name='subject' placeholder='Sujet'  required/> */}
+          <select type="text" id='subject' name='subject' required>
+            <option >Selectioner votre service</option>
+            <option value="Service 1">Service 1</option>
+            <option value="Service 2">Service 2</option>
+            <option value="Service 3">Service 3</option>
+            <option value="Service 4">Service 4</option>
+          </select>
           <input type="email" id='email' name='email' placeholder='Email'  required/>
           <textarea id='message' rows='8' name='message' placeholder='A votre ecoute'  required></textarea>
             <button className="submit-btn" type='submit'>Envoyer</button>

@@ -73,7 +73,8 @@
 				font-family: $Font-poppins;
 				font-size: 1rem;
 				transition: transform 300ms ease-in-out;
-				width: 20%;
+				// width: 20%;
+				max-width: fit-content;
 				align-self: center;
 				position: relative;
 				&:hover{
@@ -88,11 +89,17 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
 	.contact{
+		.section-title{
+			h1{
+				font-size: 1.8rem;
+				text-align: center;
+			}
+		}
 		.form-container{
 			form{
-				width: 100%;
+				width: 80%;
 				max-width: unset;
 				input,
 				textarea{
@@ -100,6 +107,15 @@
 					margin: .5rem 0;
 					padding: 1rem;
 				}
+			}
+		}
+	}
+}
+@media (max-width: 600px) {
+	.contact{
+		.form-container{
+			form{
+				width: 100%;
 			}
 		}
 	}

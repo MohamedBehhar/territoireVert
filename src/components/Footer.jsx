@@ -1,6 +1,5 @@
 import React from 'react'
-import {BsLinkedin, BsGithub} from 'react-icons/bs'
-import {MdEmail} from 'react-icons/md'
+
 
 
 const Footer = () => {

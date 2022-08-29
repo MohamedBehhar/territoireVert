@@ -1,8 +1,11 @@
 import React,{useRef} from 'react'
 import emailjs from '@emailjs/browser';
+import { useGlobalContext } from '../Context'
+
 
 const Contact = () => {
     const form = useRef();
+    const {service} = useGlobalContext()
 
     
     const sendEmail = (e) => {
@@ -32,20 +35,20 @@ const Contact = () => {
       <div className="form-container">
       <form className='form' ref={form} onSubmit={sendEmail}>
       <p className="sent-notification">
-        Votre email a ete bien envoyer
+      Votre email a été bien envoyer
       </p>
-          <h2>Contactez-nous</h2>
-          <input type="text" id='name' name='name' placeholder='Nom'  required/>
-          {/* <input type="text" id='subject' name='subject' placeholder='Sujet'  required/> */}
-          <select type="text" id='subject' name='subject' required>
-            <option >Selectioner votre service</option>
-            <option value="Service 1">Service 1</option>
-            <option value="Service 2">Service 2</option>
-            <option value="Service 3">Service 3</option>
-            <option value="Service 4">Service 4</option>
-          </select>
+          <input type="text" id='subject' name='subject' placeholder='Service' value={service}  required/>
+          <input type="text" id='company-name' name='company-name' placeholder='Nom de la société'  required/>
+          <input type="text" id='name' name='name' placeholder='Prénom'  required/>
+          <input type="text" id='family-name' name='family-name' placeholder='Nom'  required/>
+          <input type="text" id='fonction' name='fonction' placeholder='Fonction'  required/>
           <input type="email" id='email' name='email' placeholder='Email'  required/>
+          <input type="number" id='phone' name='phone' placeholder='Téléphone'  required/>
           <textarea id='message' rows='8' name='message' placeholder='A votre ecoute'  required></textarea>
+          <div className="aprouve">
+            <input type="checkbox" id='check-box' name='aprouve' required/>
+            <label htmlFor="aprouve">J'accepte que les informations saisies dans ce formulaire soient exploitées pour répondre à ma demande.</label>
+          </div>
             <button className="submit-btn" type='submit'>Envoyer</button>
       </form>
       </div>

@@ -36,53 +36,65 @@
 			}
 		}
 			form{
-			display: flex;
-			flex-direction: column;
-			width: 70%;
-			max-width: 700px;
-			font-family: $Font-poppins;
-			font-size: 1rem;
-			text-align: center;
-			h2{
-				color: $paragraph-color;
-				font-family: $Font-poppins;
-			}
-			p{
-				margin-bottom: 1rem;
-			}
-			input,
-			textarea,
-			select{
-				border: 0;
-				margin: .8rem 0;
-				padding: 1rem;
-				outline: none;
-				background: $White;
-				border-radius: 10px;
-				color: $Navy;
-			}
-
-
-			.submit-btn{
-				background: transparent;
-				outline: none;
-				border: 2px solid $green;
-				border-radius: 5px;
-				padding: .7rem;
-				cursor: pointer;
+				display: flex;
+				flex-direction: column;
+				width: 70%;
+				max-width: 700px;
 				font-family: $Font-poppins;
 				font-size: 1rem;
-				transition: transform 300ms ease-in-out;
-				// width: 20%;
-				max-width: fit-content;
-				align-self: center;
-				position: relative;
-				&:hover{
-					background: $green;
-					color: white;
+				text-align: center;
+				h2{
+					color: $paragraph-color;
+					font-family: $Font-poppins;
 				}
-			}
-			
+				p{
+					margin-bottom: 1rem;
+				}
+				input,
+				textarea,
+				select{
+					border: 0;
+					margin: .8rem 0;
+					padding: 1rem;
+					outline: none;
+					background: $White;
+					border-radius: 10px;
+					color: $Navy;
+				}
+				input[type=number] {
+					-moz-appearance: textfield;
+				}
+				input::-webkit-outer-spin-button,
+				input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+				}
+				.aprouve{
+					font-size: .8rem;
+					margin-bottom: 10px;
+					label{
+						margin-left: 3px;
+					}
+				}
+
+				.submit-btn{
+					background: transparent;
+					outline: none;
+					border: 2px solid $green;
+					border-radius: 5px;
+					padding: .7rem;
+					cursor: pointer;
+					font-family: $Font-poppins;
+					font-size: 1rem;
+					transition: transform 300ms ease-in-out;
+					max-width: fit-content;
+					align-self: center;
+					position: relative;
+					&:hover{
+						background: $green;
+						color: white;
+					}
+				}
 		}
 	}
 }

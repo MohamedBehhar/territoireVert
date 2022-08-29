@@ -4,6 +4,7 @@ const AppContext =  React.createContext()
 
 export const AppProvider = ({children}) => {
 	const [isSidebarOpen, SetIsSidebarOpen] = useState(false);
+	const [service, setService] = useState("");
 	
 	window.addEventListener('scroll', reveal);
 	function reveal(){
@@ -33,7 +34,14 @@ export const AppProvider = ({children}) => {
 
 	return (
 		<AppContext.Provider
-		value = {{openSideBar, closeSideBar, isSidebarOpen, SetIsSidebarOpen}}
+		value = {{
+			openSideBar,
+			closeSideBar,
+			isSidebarOpen,
+			SetIsSidebarOpen,
+			service,
+			setService,
+		}}
 		>
 		{children}
 		</AppContext.Provider>

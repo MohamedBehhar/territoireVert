@@ -14,14 +14,13 @@ const Works = () => {
         </section>
         <div className="services">
           {services.map((service) => {
-            const {id, title, text, button} = service
+            const {id, title, text} = service
             return (
               <div className="service" key={id}>
-                <h2>{title}</h2>
-                <p>{text}</p>
                 <a href="#contact">
-                  <button className='btn' onClick={()=> setService(title)}>{button}</button>
+                  <h2 onClick={()=> setService(title)}>{title}</h2>
                 </a>
+                <p>{text}</p>
               </div>
             )
           })}

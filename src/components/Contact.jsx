@@ -1,11 +1,11 @@
 import React,{useRef} from 'react'
 import emailjs from '@emailjs/browser';
-import { useGlobalContext } from '../Context'
+// import { useGlobalContext } from '../Context'
 
 
 const Contact = () => {
     const form = useRef();
-    const {service} = useGlobalContext()
+    // const {service} = useGlobalContext()
 
     
     const sendEmail = (e) => {
@@ -37,7 +37,16 @@ const Contact = () => {
       <p className="sent-notification">
       Votre email a été bien envoyer
       </p>
-          <input type="text" id='subject' name='subject' placeholder='Service' value={service}  required/>
+          {/* <input type="text" id='subject' name='subject' placeholder='Service' value={service}  required/> */}
+          <select type="text" id='subject' name='subject' placeholder='Selectioner votre service' required>
+            <option value="" >Selectioner votre service</option>
+            <option value="Back Office CEE externalisé">Back Office CEE externalisé</option>
+            <option value="Devis Gratuit">Devis Gratuit</option>
+            <option value="Cession des CEE">Cession des CEE</option>
+            <option value="Financement">Financement</option>
+            <option value="Financement">Formation</option>
+            <option value="Financement">Pré-étude</option>
+          </select>
           <input type="text" id='company-name' name='company-name' placeholder='Nom de la société'  required/>
           <input type="text" id='name' name='name' placeholder='Prénom'  required/>
           <input type="text" id='family-name' name='family-name' placeholder='Nom'  required/>

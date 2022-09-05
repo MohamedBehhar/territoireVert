@@ -1,19 +1,24 @@
 .about{
-	padding: 3rem 0;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
 	margin-bottom: 2rem;
 	.about-center {
 		padding-top: 0rem;
 		.about-section{
 			display: flex;
 			.description{
-				span{
-					font-weight: bold
-				}
 				padding-right: 1rem;
 				display: flex;
 				align-items: center;
 				flex-basis: 70%;
 				text-align: justify;
+				p{
+					font-size: 1.2rem;
+					line-height: 35px;
+					span{
+						font-weight: bold
+					}
+				}
 			}
 			.about-illustration{
 				flex-basis: 30%;

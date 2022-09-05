@@ -2,7 +2,7 @@
 	display: none;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
 	.sidebar{
 		background-color: white;
 		height: 100vh;
@@ -34,6 +34,13 @@
 				text-transform: capitalize;
 				margin-bottom: $Medium-margin;
 				letter-spacing: 1px;
+				&:last-child {
+					background: $green;
+					color: white;
+					padding: .5rem;
+					border-radius: 5px;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}

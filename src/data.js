@@ -20,6 +20,11 @@ export const links  = [
 		text:'CONTACT',
 		url:'#contact',
 	},
+	{
+		id:5,
+		text:'Me faire appeler',
+		url:'#contact',
+	}
 ]
 
 export const services = [

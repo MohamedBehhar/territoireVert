@@ -4,7 +4,12 @@ const Home = () => {
   return (
 	<div className='home' id='home'>
 		<section className='home-center container'>
-			<h1>le but de la vie est de vivre en accord avec la nature</h1>
+			<a href="#contact">
+				<h1>Décret tertiaire : <br /> Déclarer vos consommations énergétiques avant le 30 septembre 2022</h1>
+            </a>
+			<button className='call-btn'>
+				<a href="#contact">Me faire appeler</a>
+			</button>
 		</section>
 	</div>
   )

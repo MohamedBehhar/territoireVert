@@ -9,7 +9,12 @@ const About = () => {
       <section className="about-section">
         <article className='description'>
           <p>
-            <span>Territoir Vert</span> lorem ipsum dolor sit amet, consectetur adipisicing elit. Id porro aliquam odio molestias cum repudiandae natus, dolorem totam aut sapiente, voluptate quaerat repellendus pariatur ex! Ad corporis impedit accusamus culpa, enim, facere magni sint eum distinctio, inventore adipisci sit? Ipsum, odit? Maiores temporibus, iste a nulla, quam error neque totam reiciendis rerum consectetur aliquam dolorum eveniet repellat magnam sunt inventore facere minus. Voluptas, amet accusantium. Adipisci sequi sapiente non consequuntur.
+            <span>Territoir Vert</span> réuni un ensemble d’acteurs qualifiés pour vous accompagner dans la réussite de vos projets de rénovation thermique. <br />
+            <ul>
+              <li>- Conseil technique</li>
+              <li>- Financement et aides déduites</li>
+              <li>- Réalisations de travaux</li>
+            </ul>
           </p>
         </article>
         <div className="about-illustration">

@@ -1,24 +1,21 @@
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import Services from './components/Services';
-import './styles/index.scss';
 
+import './styles/index.scss';
+import { BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import MentionLegal from './pages/MentionLegales';
+import Main from './pages/Main'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 
 function App() {
   return (
     <>
-        <Navbar />
-        <Sidebar />
-        <Home />
-        <About />
-        <Services />
-        <Contact />
-        <Footer />
+      <BrowserRouter>
+        <Route path="/" component={Main} exact/>
+        <Route path="/mention-legales" component={MentionLegal} exact/>
+        <Route path="/donnees-personnelles" component={PrivacyPolicy} exact/>
+      </BrowserRouter>
+    
     </>
   );
 }

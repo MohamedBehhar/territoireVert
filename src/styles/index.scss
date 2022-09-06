@@ -5,6 +5,7 @@
 @import "./home";
 @import "./services";
 @import "./contact";
+@import "./footer";
 @import "./variables";
 
 html{
@@ -97,37 +98,7 @@ p {
 	}
 }
 
-// styling the footer 
 
-.footer{
-	.footer-text{
-		text-align: center;
-		background-color: whitesmoke;
-		padding: .8rem 0;
-		p{
-			color: $paragraph-color;
-			font-size: .7rem;
-			line-height: 16px;
-			a{
-				font-size: .7rem;
-				color: rgb(0, 123, 205);
-			}
-		}
-	}
-	.footer-icons{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-}
-
-@media (min-width: 768px) {
-	.footer{
-		.footer-icons{
-			display: none;
-		}
-	}
-}
 
 // Scroll fade-in animation style 
 .reveal{

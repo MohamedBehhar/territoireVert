@@ -23,33 +23,6 @@
 			font-family: $Frobot;
 		}
 	}
-	.call-btn{
-		background-color: white;
-		position: absolute;
-		bottom: -5px;
-		left: 3rem;
-		border: none;
-		border-radius: 3px;
-		padding: 1rem;
-		a{
-			color: $green
-		}
-		&::after{
-			content: "";
-			position: absolute;
-			bottom: 5px;
-			left: 13px;
-			width: 30%;
-			height: 2px;
-			background-color: $yellow;
-			border-radius: 2px;
-			transition: width ease-in-out 300ms;
-		}
-		&:hover::after{
-			width: 80%;
-		}
-
-	}
 }
 
 @media (max-width: 850px) {

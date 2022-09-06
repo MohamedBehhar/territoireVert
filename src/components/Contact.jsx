@@ -37,7 +37,6 @@ const Contact = () => {
       <p className="sent-notification">
       Votre email a été bien envoyer
       </p>
-          {/* <input type="text" id='subject' name='subject' placeholder='Service' value={service}  required/> */}
           <select type="text" id='subject' name='subject' placeholder='Selectioner votre service' required>
             <option value="" >Selectioner votre service</option>
             <option value="Décret tertiaire Phase 1">Décret tertiaire Phase 1</option>

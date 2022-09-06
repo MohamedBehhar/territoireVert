@@ -10,7 +10,7 @@ const Works = () => {
 	<div className='works' id='works'>
     <div className="works-center container reveal">
         <section className="section-title">
-        <h1>Nos service</h1>
+        <h1>Nos services</h1>
         </section>
         <div className="services">
           {services.map((service) => {

@@ -55,7 +55,7 @@ export const services = [
 	{
 		id: 5,
 		title: "Formation",
-		text: 'Améliorer vos connaissances sur les enjeux de la rénovation énergétique',
+		text: 'Améliorez vos connaissances sur les enjeux de la rénovation énergétique',
 		button: 'Parlons-en!'
 	},
 	{

@@ -9,7 +9,7 @@ const About = () => {
       <section className="about-section">
         <article className='description'>
           <p>
-            Territoire Vert réuni un ensemble d’acteurs qualifiés pour vous accompagner dans la réussite de vos projets de rénovation thermique. <br />
+            <h2>Territoire vert réuni un ensemble d’acteurs qualifiés pour vous accompagner dans la réussite de vos projets de rénovation thermique. </h2> <br />
             <ul>
               <li>- Conseil technique</li>
               <li>- Financement et aides déduites</li>

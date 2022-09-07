@@ -6,6 +6,9 @@
 		padding: .8rem 0;
 		.footer-logo{
 			max-width: 200px;
+		}
+		.slogan{
+			color: $dark-grey;
 			margin-bottom: 1rem;
 		}
 		p{
@@ -16,6 +19,18 @@
 			a{
 				font-size: .7rem;
 				color: rgb(0, 123, 205);
+			}
+		}
+		.social-link{
+			margin-bottom: .5rem;
+			a{
+				color: $dark-grey;
+				cursor: pointer;
+				transition: color ease-in-out 200ms;
+				font-size: 1.2rem;
+				&:hover{
+					color: $green;
+				}
 			}
 		}
 		.link{

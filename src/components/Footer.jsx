@@ -14,7 +14,7 @@ const Footer = () => {
 				</div>
 				<div className="links">
 					<Link  className="link" to="/mention-legales">Mentions légales</Link>
-					<Link className="link" to="/donnees-personnelles">Politique de confidentialité</Link>
+					<Link className="link" to="/donnees-personnelles" >Politique de confidentialité</Link>
 				</div>
 				<p>@Territoire Vert-2022</p>
 			</div>

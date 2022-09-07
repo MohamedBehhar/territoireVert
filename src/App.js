@@ -15,7 +15,6 @@ function App() {
         <Route path="/mention-legales" component={MentionLegal} exact/>
         <Route path="/donnees-personnelles" component={PrivacyPolicy} exact/>
       </BrowserRouter>
-    
     </>
   );
 }

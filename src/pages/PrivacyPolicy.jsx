@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
-const privacyPolicy = () => {
+const PrivacyPolicy = () => {	
+	useEffect(()=> {
+		window.scrollTo(0,0)
+	}, [])
   return (
 	<div className='privacy container'>
 		<div className="logo-container">
@@ -55,11 +59,11 @@ const privacyPolicy = () => {
 
 		<div className="btn-container">
 			<button className='back-home'>
-				<Link className='link' to="/">Revenir sur la page d'accueil</Link>
+			<Link className='link' to="/">Revenir sur la page d'accueil</Link>
 			</button>
 		</div>
 	</div>
   )
 }
 
-export default privacyPolicy
+export default PrivacyPolicy

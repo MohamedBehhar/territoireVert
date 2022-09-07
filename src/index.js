@@ -6,13 +6,14 @@ import { AppProvider } from './Context';
 import reportWebVitals from './reportWebVitals';
 
 
+
+
 ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
         <AppProvider>
           <App />
         </AppProvider>
-      
       </BrowserRouter>
     </React.StrictMode>,
   document.getElementById('root')

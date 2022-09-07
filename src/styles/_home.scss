@@ -24,6 +24,30 @@
 			font-family: $Frobot;
 		}
 	}
+	.home-btn{
+		position: absolute;
+		bottom: 0px;
+		left: 50px;
+		background: white;
+		padding: 1rem;
+		border: none;
+		border-radius: 5px 5px 0 0;
+		a{
+			color: $dark-grey;
+			font-family: $Font-poppins;
+			text-transform: capitalize;
+		}
+		&::after{
+			content: "";
+			width: 50%;
+			height: 3px;
+			background-color: $green;
+			bottom: 5px;
+			border: 50%;
+			left: 25%;
+			position: absolute;
+		}
+	}
 }
 
 @media (max-width: 850px) {

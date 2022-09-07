@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 const MentionLegal = () => {
+  useEffect(()=> {
+		window.scrollTo(0,0)
+	}, [])
   return (
     <div className='mention container'>
       <div className="logo-container">
@@ -100,7 +104,7 @@ const MentionLegal = () => {
         </p>
         <br />
         <p>
-        Intelead n’est pas responsable et ne peut donc garantir : <br /> <br />
+        Intelead n’est pas responsable et ne peut donc garantir : <br />
         la fiabilité, la pertinence, la mise à jour, ou l’exhaustivité de leur contenu,
         leur accès et leur bon fonctionnement technique. <br />
         En cas de litige entre un site référencé sur le site et un Utilisateur, la responsabilité de Intelead ne pourra être recherchée. Seule la responsabilité de l’éditeur du site référencé sur le site pourra être engagée.
@@ -108,7 +112,7 @@ const MentionLegal = () => {
       </section>
       <div className="btn-container">
 			<button className='back-home'>
-				<Link className='link' to="/#home">Revenir sur la page d'accueil</Link>
+				<Link className='link' to="/">Revenir sur la page d'accueil</Link>
 			</button>
 		</div>
     </div>

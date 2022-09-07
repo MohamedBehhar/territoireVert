@@ -39,13 +39,17 @@
 		}
 		&::after{
 			content: "";
-			width: 50%;
+			width: 20%;
 			height: 3px;
 			background-color: $green;
 			bottom: 5px;
-			border: 50%;
-			left: 25%;
+			border-radius: 2px;
+			left: 5%;
 			position: absolute;
+			transition: width ease-in-out 250ms;
+		}
+		&:hover::after{
+			width: 90%;
 		}
 	}
 }
@@ -61,7 +65,16 @@
 			}
 
 		}
-
+		.home-btn{
+			left: unset;
+			padding: .5rem;
+			a{
+				font-size: 1rem;
+			}
+			&::after{
+				bottom: 2px;
+			}
+		}
 	}
 }
 @media (max-width: 650px) {

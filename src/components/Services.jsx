@@ -1,35 +1,32 @@
-import React from 'react'
-import { services } from '../data'
-import { useGlobalContext } from '../Context'
-
+import React from "react";
+import { services } from "../data";
+import { useGlobalContext } from "../Context";
 
 const Works = () => {
-  const {setService} = useGlobalContext();
+  const { setService } = useGlobalContext();
 
   return (
-	<div className='works' id='works'>
-    <div className="works-center container reveal">
+    <div className="works" id="works">
+      <div className="works-center container reveal">
         <section className="section-title">
-        <h1>Nos services</h1>
+          <h1>Nos services</h1>
         </section>
         <div className="services">
           {services.map((service) => {
-            const {id, title, text} = service
+            const { id, title, text } = service;
             return (
-              <div className="service" key={id}>
+              <a className="service" href="#contact" key={id}>
                 <a href="#contact">
-                  <h2 onClick={()=> setService(title)}>{title}</h2>
+                  <h2 onClick={() => setService(title)}>{title}</h2>
                 </a>
                 <p>{text}</p>
-              </div>
-            )
+              </a>
+            );
           })}
-          
         </div>
-
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;

@@ -18,7 +18,7 @@ nav{
 			}
 		}
 		.nav-links{
-			flex-basis: 80%;
+			flex-basis: 85%;
 			justify-self: flex-end;
 			display: flex;
 			justify-content: space-between;
@@ -26,12 +26,12 @@ nav{
 			text-transform: capitalize;
 			.link{
 				text-transform: uppercase;
-				font-size: 1rem;
+				font-size: .9rem;
 				font-family: $Font-poppins;
 				font-weight: 300;
 				color: $dark-grey;
 				position: relative;
-				letter-spacing: 2px;
+				letter-spacing: 1px;
 				transition: color ease-in-out 300ms;
 				&:hover{
 					color: $green;
@@ -41,6 +41,9 @@ nav{
 					color: white;
 					padding: .5rem;
 					border-radius: 5px;
+				}
+				@media (max-width: 1050px) {
+					font-size: .8rem;
 				}
 			}
 		}

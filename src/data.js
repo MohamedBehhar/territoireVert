@@ -2,26 +2,31 @@
 export const links  = [
 	{
 		id:1,
-		text:'Accueil',
-		url:'#home',
-	},
-	{
-		id:2,
-		text:'À propos',
-		url:'#about',
-	},
-	{
-		id:3,
-		text:'NOS SERVICES',
+		text:'Nos Service',
 		url:'#works',
 	},
 	{
+		id:2,
+		text:'programmes',
+		url:'#programmes',
+	},
+	{
+		id:3,
+		text:'Annuaire des pro',
+		url:'#annuaire',
+	},
+	{
 		id:4,
-		text:'CONTACT',
-		url:'#contact',
+		text:'Partenaires',
+		url:'#Partenaires',
 	},
 	{
 		id:5,
+		text:'MarketPlace',
+		url:'#MarketPlace',
+	},
+	{
+		id:6,
 		text:'Me faire appeler',
 		url:'#contact',
 	}
